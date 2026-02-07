@@ -1,0 +1,98 @@
+body{
+font-family:Arial;
+margin:0;
+background:#f0f3ff;
+}
+
+/* HEADER */
+
+header{
+background:#0b1f66;
+color:white;
+padding:10px;
+text-align:center;
+}
+
+.header-box{
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.logo{
+width:90px;
+margin-right:15px;
+background:white;
+padding:4px;
+border-radius:5px;
+}
+
+.title{
+background:#142a8a;
+padding:8px;
+}
+
+/* NAV */
+
+nav{
+text-align:center;
+background:#162a8a;
+padding:6px;
+}
+
+nav button{
+margin:5px;
+padding:8px 14px;
+background:white;
+border:none;
+cursor:pointer;
+}
+
+/* SECTIONS */
+
+section{
+width:80%;
+margin:10px auto;
+background:white;
+padding:12px;
+border-radius:8px;
+}
+
+/* CHAT */
+
+.chat-container{
+border:1px solid #aaa;
+padding:8px;
+}
+
+#chat-box{
+height:360px;
+overflow-y:auto;
+border:1px solid #ccc;
+padding:6px;
+}
+
+.input-area{
+display:flex;
+margin-top:6px;
+}
+
+input{
+flex:1;
+padding:8px;
+}
+
+button{
+padding:8px;
+background:#0d1b6b;
+color:white;
+border:none;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:8px;
+background:#ddd;
+}
