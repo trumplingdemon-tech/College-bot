@@ -1,98 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-
-<title>Bhavan’s Vivekananda College Assistant</title>
-
+<title>Bhavan’s Vivekananda College – Login</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-
-<div class="header-box">
-
-<img src="logo.png" class="logo">
-
-<div>
 <h1>Bhavan’s Vivekananda College</h1>
 <h3>Sainikpuri, Secunderabad</h3>
-<h4>Autonomous – Affiliated to Osmania University</h4>
-</div>
-
-</div>
-
-<h2 class="title">AI Based College Information Assistant</h2>
-
 </header>
 
-<nav>
-<button onclick="showHome()">Home</button>
-<button onclick="showChat()">Chatbot</button>
-<button onclick="showAbout()">About</button>
-</nav>
+<section class="login-box">
 
-<!-- HOME -->
-<section id="home">
+<h2>Student Login</h2>
 
-<h2>Student Digital Assistant</h2>
+<input id="uid" placeholder="User ID" />
+<input id="pwd" type="password" placeholder="Password" />
 
-<p>
-This application helps students to get instant information about:
-</p>
+<button onclick="login()">Login</button>
 
-<ul>
-<li>Library Books & Call Numbers</li>
-<li>Faculty Details & Emails</li>
-<li>Programs Offered</li>
-<li>Youth Red Cross (YRC)</li>
-<li>NCC & Scouts</li>
-</ul>
-
-</section>
-
-<!-- CHAT -->
-<section id="chat" style="display:none;">
-
-<div class="chat-container">
-
-<div id="chat-box"></div>
-
-<div class="input-area">
-<input id="userInput"
-placeholder="Ask about faculty, programs, library..." />
-
-<button onclick="send()">Send</button>
-</div>
-
-</div>
-
-</section>
-
-<!-- ABOUT -->
-<section id="about" style="display:none;">
-
-<h2>About Project</h2>
-
-<p>
-Developed as part of Mini Project to provide a smart digital interface for Bhavan’s Vivekananda College students.
-</p>
-
-<p>
-Technologies Used:
-• HTML  
-• CSS  
-• JavaScript  
+<p class="note">
+Demo Login: admin / admin  
+(Authentication will be added later)
 </p>
 
 </section>
 
-<footer>
-Department of Computer Science – Mini Project
-</footer>
+<script>
+function login(){
+window.location="dashboard.html";
+}
+</script>
 
-<script src="script.js"></script>
 </body>
 </html>
