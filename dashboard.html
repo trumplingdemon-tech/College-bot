@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>College Assistant</title>
+<meta charset="UTF-8">
+<title>Bhavan’s College Portal</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -9,72 +10,88 @@
 
 <header>
 <h1>Bhavan’s Vivekananda College</h1>
-<h3>AI Information Assistant</h3>
+<h3>Digital Student Information Portal</h3>
 </header>
 
 <nav>
-<button onclick="show('home')">Home</button>
-<button onclick="show('chat')">Chatbot</button>
-<button onclick="show('info')">College Info</button>
 <button onclick="logout()">Logout</button>
 </nav>
 
-<!-- HOME -->
-<section id="home">
+<!-- DASHBOARD CARDS -->
 
-<h2>Welcome Student</h2>
+<section class="grid">
 
-<p>This portal provides:</p>
-
+<div class="card">
+<h3>📘 Academic Information</h3>
 <ul>
-<li>Faculty Directory</li>
-<li>Programs Offered</li>
-<li>Library Assistance</li>
-<li>YRC / NCC / Scouts Information</li>
+<li>UG & PG Programs</li>
+<li>Departments</li>
+<li>Course Structure</li>
+<li>Eligibility</li>
 </ul>
+</div>
+
+<div class="card">
+<h3>👩‍🏫 Faculty Directory</h3>
+<ul>
+<li>Faculty Names</li>
+<li>Departments</li>
+<li>Official Emails</li>
+<li>HoD Details</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>📚 Library Navigator</h3>
+<ul>
+<li>Book Call Numbers</li>
+<li>Subject Locations</li>
+<li>Department Books</li>
+<li>Search Support</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🤝 Student Services</h3>
+<ul>
+<li>Youth Red Cross (YRC)</li>
+<li>National Cadet Corps</li>
+<li>Scouts & Guides</li>
+<li>Camps & Outreach</li>
+</ul>
+</div>
 
 </section>
 
-<!-- CHAT -->
-<section id="chat" style="display:none;">
+<!-- CHAT SECTION -->
+
+<section class="chat-area">
+
+<h2>💬 Chat with AI Assistant</h2>
+
+<div class="samples">
+<b>Sample Questions:</b>
+<ul>
+<li onclick="askSample('What programs are offered?')">What programs are offered?</li>
+<li onclick="askSample('Faculty emails CS department')">Faculty emails CS</li>
+<li onclick="askSample('Call number for Java')">Call number for Java</li>
+<li onclick="askSample('Tell about YRC')">Tell about YRC</li>
+</ul>
+</div>
+
+<div class="recent">
+<b>Recent Searches:</b>
+<ul id="recentList"></ul>
+</div>
 
 <div class="chat-container">
 <div id="chat-box"></div>
 
 <div class="input-area">
-<input id="userInput"
-placeholder="Ask anything..." />
-<button onclick="send()">Send</button>
+<input id="userInput" placeholder="Ask your question..." />
+<button onclick="send()">Ask</button>
 </div>
 </div>
-
-</section>
-
-<!-- COLLEGE INFO -->
-<section id="info" style="display:none;">
-
-<h2>About College</h2>
-
-<p>
-Bhavan’s Vivekananda College is an autonomous institution
-affiliated to Osmania University offering UG & PG programs in:
-</p>
-
-<ul>
-<li>Science</li>
-<li>Commerce</li>
-<li>Arts</li>
-<li>Management</li>
-<li>Computer Applications</li>
-</ul>
-
-<h3>Facilities</h3>
-<ul>
-<li>Central Library</li>
-<li>Computer Labs</li>
-<li>NCC & YRC Units</li>
-<li>Sports Complex</li>
-</ul>
 
 </section>
 
