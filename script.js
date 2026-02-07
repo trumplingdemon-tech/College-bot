@@ -83,3 +83,11 @@ return "Ask about programs, faculty, library, YRC, NCC.";
 }
 
 window.onload=loadRecent;
+function testFirebase(){
+  firebase.database().ref("demo").set({
+     text: "Database Working",
+     time: new Date().toString()
+  });
+
+  alert("Data Sent to Firebase!");
+}
