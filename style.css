@@ -13,27 +13,8 @@ text-align:center;
 
 nav{
 text-align:center;
-background:#162a8a;
 padding:6px;
 }
-
-nav button{
-margin:4px;
-padding:8px 14px;
-background:white;
-border:none;
-cursor:pointer;
-}
-
-section{
-width:80%;
-margin:10px auto;
-background:white;
-padding:12px;
-border-radius:8px;
-}
-
-/* LOGIN */
 
 .login-box{
 width:40%;
@@ -47,7 +28,48 @@ margin:6px;
 padding:8px;
 }
 
+/* GRID CARDS */
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+width:85%;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:12px;
+border-radius:8px;
+box-shadow:0 0 5px #ccc;
+}
+
 /* CHAT */
+
+.chat-area{
+width:85%;
+margin:10px auto;
+background:white;
+padding:10px;
+border-radius:8px;
+}
+
+.samples, .recent{
+background:#f5f7ff;
+padding:8px;
+margin-bottom:8px;
+border-radius:6px;
+}
+
+.samples li, .recent li{
+cursor:pointer;
+margin:4px;
+}
+
+.samples li:hover{
+color:#0d1b6b;
+}
 
 .chat-container{
 border:1px solid #aaa;
@@ -55,7 +77,7 @@ padding:8px;
 }
 
 #chat-box{
-height:360px;
+height:320px;
 overflow-y:auto;
 border:1px solid #ccc;
 padding:6px;
