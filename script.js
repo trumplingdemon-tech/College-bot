@@ -1,20 +1,17 @@
-function showHome(){
-home.style.display="block";
-chat.style.display="none";
-about.style.display="none";
-}
+function show(id){
 
-function showChat(){
-home.style.display="none";
-chat.style.display="block";
-about.style.display="none";
-}
-
-function showAbout(){
 home.style.display="none";
 chat.style.display="none";
-about.style.display="block";
+info.style.display="none";
+
+document.getElementById(id).style.display="block";
 }
+
+function logout(){
+window.location="index.html";
+}
+
+/* SIMPLE CHAT DEMO */
 
 function send(){
 
@@ -32,13 +29,13 @@ if(m.includes("program"))
 r="B.Sc, B.Com, BCA, BA, M.Sc, M.Com, MBA";
 
 if(m.includes("faculty"))
-r="Faculty details with emails available";
+r="Faculty details & emails will be added";
 
 if(m.includes("yrc"))
-r="Youth Red Cross – service activities";
+r="Youth Red Cross activities";
 
 if(m.includes("ncc"))
-r="NCC – discipline & leadership";
+r="NCC training & camps";
 
 add("Bot",r);
 }
