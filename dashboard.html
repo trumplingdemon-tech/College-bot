@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>College Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Bhavan’s Vivekananda College</h1>
+<h3>AI Information Assistant</h3>
+</header>
+
+<nav>
+<button onclick="show('home')">Home</button>
+<button onclick="show('chat')">Chatbot</button>
+<button onclick="show('info')">College Info</button>
+<button onclick="logout()">Logout</button>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+
+<h2>Welcome Student</h2>
+
+<p>This portal provides:</p>
+
+<ul>
+<li>Faculty Directory</li>
+<li>Programs Offered</li>
+<li>Library Assistance</li>
+<li>YRC / NCC / Scouts Information</li>
+</ul>
+
+</section>
+
+<!-- CHAT -->
+<section id="chat" style="display:none;">
+
+<div class="chat-container">
+<div id="chat-box"></div>
+
+<div class="input-area">
+<input id="userInput"
+placeholder="Ask anything..." />
+<button onclick="send()">Send</button>
+</div>
+</div>
+
+</section>
+
+<!-- COLLEGE INFO -->
+<section id="info" style="display:none;">
+
+<h2>About College</h2>
+
+<p>
+Bhavan’s Vivekananda College is an autonomous institution
+affiliated to Osmania University offering UG & PG programs in:
+</p>
+
+<ul>
+<li>Science</li>
+<li>Commerce</li>
+<li>Arts</li>
+<li>Management</li>
+<li>Computer Applications</li>
+</ul>
+
+<h3>Facilities</h3>
+<ul>
+<li>Central Library</li>
+<li>Computer Labs</li>
+<li>NCC & YRC Units</li>
+<li>Sports Complex</li>
+</ul>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
